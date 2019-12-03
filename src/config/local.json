@@ -1,0 +1,16 @@
+{
+    "ru": {
+        "common": {
+            "login":"логин",
+            "exit": "выход",
+            "cancel": "отмена",
+            }
+    },
+    "en": {
+        "common": {
+            "login": "login",
+            "exit": "exit",
+            "cancel": "cancel",
+        }
+    }
+}

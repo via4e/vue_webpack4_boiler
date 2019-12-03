@@ -11,15 +11,17 @@ module.exports = {
     hot: true,
     watchOptions: {
       poll: true
-    }
+    },
+    port: 8181
   },
   module: {
     rules: [
+      // {
+      //   test: /\.(js|vue)$/,
+      //   use: 'eslint-loader',
+      //   enforce: 'pre'
+      // },
       {
-        test: /\.(js|vue)$/,
-        use: 'eslint-loader',
-        enforce: 'pre'
-      },          {
         test: /\.vue$/,
         use: 'vue-loader'
       },
@@ -41,6 +43,10 @@ module.exports = {
             'css-loader',
             'sass-loader'
         ]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'vue-svg-loader',
       }      
     ]
   },

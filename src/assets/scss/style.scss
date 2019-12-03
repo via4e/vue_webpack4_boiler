@@ -1,0 +1,208 @@
+@import "start.scss";
+
+html {
+  width: 100%;
+}
+
+body {
+  height: 96%;
+  width: 99%;
+}
+
+//все заглавные
+.upper {
+  text-transform: uppercase;
+}
+
+//первая заглавная
+.capi {
+  text-transform: capitalize;
+}
+
+.md-switch {
+  display: flex;
+}
+
+.test {
+  color: $test_color;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-menu {
+  background-color: $topmenu;
+}
+
+.second-menu {
+  background-color: $topsecondmenu;
+}
+
+.page-container {
+  height: 100%;
+  max-height: 1080px;
+  width: 100%;
+}
+// .content-page {
+//   // height: 88%;
+// }
+
+.second-menu-icon {
+  margin-right: 12px;
+}
+
+.menu-avatar {
+  margin-right: -12px;
+}
+
+.content-page {
+  height: 100%;
+  .md-content {
+
+    display: inline-flex;
+    justify-content: center;
+    &.work-view {
+      background: $content_bg_work;
+      float: right;
+      position: relative;
+      transition: 1s ease;
+      max-height: 1080px;
+      height: 100%;
+      overflow-y: scroll;
+    }
+    &.graph-view {
+      overflow: hidden;
+      max-height: 1080px;
+      height: 100%;
+      background: $content_bg_graph;
+      transition: 1s ease;
+    }
+  }
+}
+
+//Work Area
+#work-window {
+  width: 100%;
+}
+
+.work-toolbar {
+  height: 32px;
+  background-color: $router_toolbar_bg;
+}
+
+.work-toolbar-second {
+  height: 32px;
+  background-color: $router_toolbar_second_bg;
+}
+
+.work-area {
+  width: 100%;
+  overflow: hidden;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  .bottom-bar-line {
+    padding: 0 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      span {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.editor_menu {
+  height: 32px;
+  background: #e74c3c;
+}
+
+//#########################
+
+.md-content {
+  ul {
+    li {
+      list-style: none;
+      font-size: 1.3em;
+      color: darkblue;
+      padding: 4px 8px;
+      span {
+        cursor: pointer;
+        &:hover {
+          background: #ff6b6b;
+        }
+      }
+    }
+  }
+}
+
+.server-modal {
+  padding: 48px;
+  width: 480px;
+}
+
+.warning {
+  color: $warning_color;
+  background: $warning_bg !important;
+}
+
+// About
+
+.about {
+  width: 640px;
+  height: 480px;
+  padding: 2em;
+  font-size: 1em;
+  font-weight: 600;
+  color: $about_color;
+}
+
+.about span {
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+}
+
+// Bottom Bar
+.bottom-bar { 
+  z-index: 111 
+};
+
+// ProjectViewMode
+  .prj-view-normal { 
+    width: 49.9%; 
+  }
+  .prj-view-master { 
+    width: 84.9%; 
+  }
+  .prj-view-slave {
+     width: 14.9%; 
+    }
+
+// FX
+.bigger-on-hover {
+  transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  &:hover {
+    transform: scale(1.03);
+    box-shadow:  0 32px 80px 14px rgba(0,0,0,0.36), 0 0 0 1px rgba(0, 0, 0, 0.3);
+ }
+}
+
+.bigger-on-hover-only {
+  transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  &:hover {
+    transform: scale(1.2);
+ }
+}
