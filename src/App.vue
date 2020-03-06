@@ -3,6 +3,7 @@
     <!-- Top level menu -->
     <topmenu />
     <div>
+      APP
     </div>
     <bottombar />
 
@@ -11,16 +12,16 @@
 
 <script>
 
-import topMenu from './components/App/TopMenu.vue'
-import bottomBar from './components/App/BottomBar.vue'
+import topmenu from './components/App/TopMenu.vue'
+import bottombar from './components/App/BottomBar.vue'
 
 import Work from './components/Work/work.vue'
 
 export default {
   name: 'App',
   components: {
-    topMenu,
-    bottomBar,
+    topmenu,
+    bottombar,
     Work
   },
   data: () => ({

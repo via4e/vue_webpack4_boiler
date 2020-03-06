@@ -1,6 +1,6 @@
 <template>
   <div>
-    topmenu
+    Top menu
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 
   },
   data: () => ({
-    lang: false
+    
   }),
   computed: {
  
