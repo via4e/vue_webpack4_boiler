@@ -1,42 +1,19 @@
 <template>
-  <div>
-    <!-- Top level menu -->
-    <topmenu />
-    <div>
-      APP
-    </div>
-    <bottombar />
-
-  </div>
+    <h2>{{ count }}</h2>
+    <button @click="inc">Increment</button>
 </template>
 
+
 <script>
-
-import topmenu from './components/App/TopMenu.vue'
-import bottombar from './components/App/BottomBar.vue'
-
-import Work from './components/Work/work.vue'
-
 export default {
-  name: 'App',
-  components: {
-    topmenu,
-    bottombar,
-    Work
-  },
+  name: "App",  
   data: () => ({
-    mode: 'normal'
+    count: 0  
   }),
-  computed: {
-    local () {
-      return local
-    },
-  },
-  created () {
-
-  },
   methods: {
-
+    inc() {
+      this.count++;
+    }
   }
-}
+};
 </script>
